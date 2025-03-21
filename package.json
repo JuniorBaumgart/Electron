@@ -1,0 +1,23 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "Projeto de aprendizagem em electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuniorBaumgart/Electron.git"
+  },
+  "author": "Junior de Souza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuniorBaumgart/Electron/issues"
+  },
+  "homepage": "https://github.com/JuniorBaumgart/Electron#readme",
+  "devDependencies": {
+    "electron": "^35.0.3"
+  }
+}
