@@ -1,6 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
-const fs = require('fs');
 const { exec } = require('child_process');
 const { jsPDF } = require('jspdf');
 const { autoTable } = require('jspdf-autotable');
@@ -21,9 +20,13 @@ app.whenReady().then(() => {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: 'src/frontend/img/LogoApp.png',
+    title: 'Soma Relatorios',
+    autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
+      
     },
   });
 

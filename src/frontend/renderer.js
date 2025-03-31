@@ -1,9 +1,4 @@
-const XLSX = require('xlsx'); // Importando XLSX
-const { jsPDF } = require('jspdf');  // Importando jsPDF
-const { autoTable } = require('jspdf-autotable');
-const { remote, ipcRenderer } = require('electron'); // Para acessar o sistema de arquivos no Electron
-const os = require('os'); // Para acessar a pasta Downloads do sistema
-const path = require('path')
+const { ipcRenderer } = require('electron'); // Para acessar o sistema de arquivos no Electron
 
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("DOM totalmente carregado.");

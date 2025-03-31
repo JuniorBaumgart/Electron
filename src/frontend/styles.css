@@ -115,11 +115,11 @@ button:disabled {
 }
 
 #generateExcel:enabled {
-  background-color: green;
+  background-color: #217346;
 }
 
 #generatePDF:enabled {
-  background-color: red;
+  background-color: #ac0000 ;
 }
 
 /* Estilos para o overlay de carregamento */
@@ -144,6 +144,7 @@ button:disabled {
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
+  display:block;
 }
 
 @keyframes spin {
