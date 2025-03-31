@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="sidebar">
+    <h2>📊 Relatórios</h2>
+    <select id="reportSelect"></select>
+    <div id="paramsContainer"></div>
+    <button id="generateReport">Gerar Relatório</button>
+    <button id="generatePDF" disabled>Gerar PDF</button>
+    <button id="generateExcel" disabled>Gerar Excel</button>
+  </nav>
+
+  <main class="content">
+    <h1>Resultados</h1>
+    <div id="reportContainer"></div>
+  </main>
+  <div id="loadingOverlay" style="display: none;">
+    <div class="spinner"></div>
+    <p>Carregando...</p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

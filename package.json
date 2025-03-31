@@ -1,0 +1,27 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "main": "./main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "app-builder-lib": "^26.0.12",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "node-firebird": "^1.1.9",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^35.0.3",
+    "electron-builder": "^25.1.8"
+  }
+}

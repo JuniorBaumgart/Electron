@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  margin-left: 250px;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  height: 100%; /* Mantém a altura da sidebar até o final da tela */
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#reportSelect, button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#reportSelect {
+  background: white;
+  color: black;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Espaço para a sidebar fixa */
+  padding-top: 40px; /* Ajuste para alinhar com o topo da página */
+}
+
+h1 {
+  color: #333;
+}
+
+#reportContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+
+#paramsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#paramsContainer input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+  color: black;
+  margin: 0 auto;
+  display: block;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+#generateExcel:enabled {
+  background-color: green;
+}
+
+#generatePDF:enabled {
+  background-color: red;
+}
+
+/* Estilos para o overlay de carregamento */
+#loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 10000; /* Certifique-se de que o overlay fique acima de todos os outros elementos */
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #fff;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
